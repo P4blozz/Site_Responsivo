@@ -1,0 +1,126 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* container */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* imagens */
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Efeito */
+.img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Colunas e layout no grid */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Ajusta as colunas para garantir que as imagens fiquem do mesmo tamanho */
+.col-12 {
+  flex: 1 1 30%;
+  max-width: 30%;
+}
+
+/* Responsividade: as imagens ficam empilhadas em telas menores */
+@media (max-width: 768px) {
+  .col-12 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+main {
+  background-color: #fff;
+  padding: 40px 0;
+}
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Navbar */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  /* Estilo para a logo na barra de navegação */
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
+  /* Imagens */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  }
+  
